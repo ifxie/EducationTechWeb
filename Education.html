@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products Web</title>
+    <link rel="stylesheet" href="css/EducationWebStyle.css">
+    <link rel="stylesheet" href="css/ft-carousel.css" />
+    <style>
+        .example {width: 790px;height: 390px;font-size: 40px;text-align: center;background-color: #464576;}
+        .carousel-item{line-height: 390px;color: #fff;font-family:  Arial Black}
+        .keepAway{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .specificItem ul li{
+            margin-right: 15px;
+            margin-left:5px; 
+        }
+        .productsModules{
+            margin-left: 60px;
+            margin-top: 25px;
+            float: left;
+        }
+        .function-items{
+            margin-right: 31px;
+        }
+        .function-items a{
+            line-height: 50px;
+            display: block;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .Provider-item{
+            margin-right: 96px;
+        }
+        .prod-part{
+            margin-right: 55px;
+            margin-top: 20px;
+            margin-left: 3px;
+            
+        }
+        .classitem{
+            margin-left: 45px;
+            margin-top: 25px;
+        }
+
+        #gallery img {
+	        border: none;
+        }
+
+        #gallery_nav {
+	        float: left;
+	        width: 112px;
+	        text-align: center;
+        }
+        #gallery_nav a{
+            display: block;
+            height: 92px;
+        }
+        #gallery_output {
+	        float: left;
+        	width: 600px;
+	        overflow: hidden;
+        }
+
+        #gallery_output img {
+	        display: block;
+	        margin: 0px auto 0 auto;
+        }
+        .on{ border: 1px solid rgba(92,92,92,1.00); }
+        #gallery_nav a{
+            outline-color: #888;padding: 7px 0;	
+        }
+        .clear {
+        	clear: both;
+	        line-height: 1px;
+	        font-size: 1px;
+        }
+        .showPicture{
+            width: 757px;
+	        margin: 50px auto;
+	        padding: 20px;
+	        background: #FFF;	
+	        border: 1px solid #CCC;
+        }
+        </style>
+</head>
+<body>
+    <!-- 这里是最顶部的栏 -->
+    <div class="topLog">
+        
+    </div>
+    <!--logo 以及搜索栏  -->
+    <div class="TitleLan">
+        <div class="logo" style="margin-left:360px;float: left;">
+            <img src="img/Logo.png" alt=""  height="85px;">
+        </div>
+        <div class="companyName" style="margin-top:20px;">
+                天一教育
+        </div>
+    </div>
+    <div class="home">
+        <div class="homecenter" style="margin:10px auto;">
+            <!-- 左边登录模块 右边循环小广告 -->
+            <div class="homerow1 row" style="margin:0px 12px;">
+                <!-- 登录模块 -->
+                <div class="LoginModual" style="margin:5px 5px;">
+                    <div class="row1-headsculpture" style="margin-top:10px;">
+                        <!-- 固定位置 -->
+                        <div class="keepScuCenter" style="margin:0 auto;width:70px;height:70px;">
+                            <img src="img/headSuc.jpg" alt="" style="width:70px;height:70px;border-radius:35px;border:3px solid #000">
+                        </div>
+                    </div>
+                    <div class="row2-RegisterOrLogin" style="margin-top:20px;">
+                        <button class="button" style="margin:auto 60px auto 60px">登录</button>
+                        <button class="button" style="margin:auto 60px auto 0">注册</button>
+                    </div>
+                    
+                    <div class="row3-moduals">
+                        <div class="fun-module" style="margin:14px 0 auto 22px;">公告</div>
+                        <div class="fun-module" style="margin:14px 0 auto 22px;">论坛</div>
+                        <div class="fun-module" style="margin:14px 0 auto 22px;">公益</div>
+                        <div class="fun-module" style="margin:14px 0 auto 22px;">收藏</div>
+                        <div class="fun-module" style="margin:14px 0 auto 22px;">课程</div>
+                    </div>
+                    <div class="row4-funs">
+                        <button href="" class="button-r4" style="margin:5px 33.5px;">签到</button>
+                        <button href="" class="button-r4" style="margin:auto 33.5px;">我的卡包</button>
+                    </div>
+                </div>
+                <!--轮播图  -->
+                <div class="ShowInfoWindows" style="margin:5px 12px;">
+                    <div class="example">
+                        <div class="ft-carousel" id="carousel_1">
+                            <ul class="carousel-inner">
+                                <li class="carousel-item"><img src="img/a1.jpg" /></li>
+                                <li class="carousel-item"><img src="img/a2.jpg" /></li>
+                                <li class="carousel-item"><img src="img/a3.jpg" /></li>
+                                <li class="carousel-item"><img src="img/a4.jpg" /></li>
+                                <li class="carousel-item"><img src="img/a5.jpg" /></li>
+                                <li class="carousel-item"><img src="img/a6.jpg" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 轮播图的js -->
+                <script src="js/jquery.min.js"></script>
+                <script src="js/ft-carousel.min.js"></script>
+                <script type="text/javascript">
+	                $("#carousel_1").FtCarousel();
+
+	                $("#carousel_2").FtCarousel({
+		                index: 1,
+		                auto: false
+	                });
+
+	                $("#carousel_3").FtCarousel({
+		                index: 0,
+		                auto: true,
+		                time: 3000,
+		                indicators: false,
+		                buttons: true
+	                });
+                </script>
+            </div>
+            <!-- 微信公众号  各种特色产品 -->
+            <div class="homerow2 row" style="margin:15px 12px;">
+                <div class="homerow2-leftpart" style="margin:5px 5px;">
+                        <div class="homerow2-wechat" style="margin-top:5px;">
+                                
+                                <div class="row2-title">
+                                   官方联系人微信二维码 
+                                </div>
+                                <div class="row2-wechat-QR">
+                                    <img src="img/QR.jpg" alt="" width="170px" style="margin:0 80px;">
+                                </div> 
+                                
+                        </div>
+                        <div class="homerow2-label" style="margin-top:10px;margin-bottom:10px;">
+                            
+                            <div class="row2-title" style="height: 40px;line-height: 40px;">
+                                全部课程
+                            </div>
+                            <div class="class-items">
+                                <div class="MainName">
+                                    <b>C语言</b>
+                                </div>
+                                <div class="specificItem">
+                                    <ul>
+                                        <li><a href="">基础</a></li>
+                                        <li><a href="">程序设计</a></li>
+                                        <li><a href="">数据结构</a></li>
+                                        <li><a href="">简单实践</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="class-items">
+                                <div class="MainName">
+                                    <b>PLC</b>
+                                </div>
+                                <div class="specificItem">
+                                    <ul>
+                                        <li><a href="">基础</a></li>
+                                        <li><a href="">程序设计</a></li>
+                                        <li><a href="">数据结构</a></li>
+                                        <li><a href="">简单实践</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="class-items">
+                                <div class="MainName">
+                                    <b> 变频器</b>
+                                </div>
+                                <div class="specificItem">
+                                    <ul>
+                                        <li><a href="">基础</a></li>
+                                        <li><a href="">程序设计</a></li>
+                                        <li><a href="">数据结构</a></li>
+                                        <li><a href="">简单实践</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="class-items">
+                                <div class="MainName">
+                                    <b>触摸屏</b>
+                                </div>
+                                <div class="specificItem">
+                                    <ul>
+                                        <li><a href="">基础</a></li>
+                                        <li><a href="">程序设计</a></li>
+                                        <li><a href="">数据结构</a></li>
+                                        <li><a href="">简单实践</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="class-items">
+                                <div class="MainName">
+                                    <b>单片机</b>
+                                </div>
+                                <div class="specificItem">
+                                    <ul>
+                                        <li><a href="">基础</a></li>
+                                        <li><a href="">程序设计</a></li>
+                                        <li><a href="">数据结构</a></li>
+                                        <li><a href="">简单实践</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="homerow2-rightpart" style="margin:10px 10px;">
+                    <div class="homerow2-left-row1" style="">
+                        <div class="function-items">
+                            <a href="">课程中心</a>
+                        </div>
+                        <div class="function-items">
+                            <a href="">共享网络</a>
+                        </div>
+                        <div class="function-items">
+                            <a href="">技术文章</a>
+                        </div>
+                        <div class="function-items">
+                            <a href="">论坛文章</a>
+                        </div>
+                        <div class="function-items">
+                            <a href="">淘宝直营</a>
+                        </div>
+                        <div class="function-items" style="margin-right: 0;width: 107px;">
+                            <a href="">科技知乎</a>
+                        </div>
+                        
+                    </div>
+                    <script type="text/javascript" src="js/jquery.min.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+	                        $("#gallery_output img").not(":first").hide();
+
+                        	$("#gallery a").click(function() {
+		                    $("#gallery a").removeClass('on');
+		                    $(this).addClass("on");
+		                    if ( $("#" + this.rel).is(":hidden") ) {
+			                $("#gallery_output img").slideUp();
+			                $("#" + this.rel).slideDown();
+		                        }
+	                        });
+                        });
+
+                    </script>
+                    <div class="showPicture" style="margin-top: 4px;">
+                        <div id="gallery">
+                            <div id="gallery_nav">
+                                <a class="on" rel="img1" href="javascript:;"><img src="img/iphone_1.jpg" /></a>
+                                <a rel="img2" href="javascript:;"><img src="img/iphone_2.jpg" /></a>
+                                <a rel="img3" href="javascript:;"><img src="img/iphone_3.jpg" /></a>
+                                <a rel="img4" href="javascript:;"><img src="img/iphone_4.jpg" /></a>
+                            </div>
+                            
+                            <div id="gallery_output">
+                                <img id="img1" src="img/iphone_1b.jpg" />
+                                <img id="img2" src="img/iphone_2b.jpg" />
+                                <img id="img3" src="img/iphone_3b.jpg" />
+                                <img id="img4" src="img/iphone_4b.jpg" />
+                            </div>
+                            
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 最新产品 -->
+            <div class="homerow3 row" style="margin:15px 12px;">
+                 <div class="Provider-item" style="margin-left: 10px;">
+                    <a href="">热门课程</a>
+                 </div>
+                 <div class="Provider-item">
+                    <a href="">直播课程表</a>
+                 </div>
+                 <div class="Provider-item">
+                    <a href="">拯救小白</a>
+                 </div>
+                 <div class="Provider-item">
+                    <a href="">共享课程</a>
+                 </div>
+                 <div class="Provider-item" style="margin-right: 0;">
+                    <a href="">文献下载</a>
+                 </div>
+            </div>
+            
+            <div class="homerow4 row" style="margin:100px 12px;">
+                  <div class="class-video" style="margin-top: 25px;">
+                    视频课程
+                  </div> 
+                  <div class="row4-mid" style="margin-top: 25px;">
+                        <div class="productsLan">
+                            <div class="prod-part">
+                                <a href="">单片机</a>
+                            </div>
+                            <div class="prod-part">
+                                <a href="">PLC</a>
+                            </div>
+                            <div class="prod-part">
+                                <a href="">EDA</a>
+                            </div>
+                            <div class="prod-part" style="margin-right: 0;">
+                                <a href="">变压器</a>
+                            </div>
+                        </div>
+                        <div class="classes-part">
+                            <div class="classitem">
+                                课程一
+                            </div>
+                            <div class="classitem">
+                                课程二
+                            </div>
+                            <div class="classitem">
+                                课程三
+                            </div>
+                            <div class="classitem">
+                                课程四
+                            </div>
+                        </div>
+                  </div>
+                  <div class="row4-right" style="margin-top: 25px;">
+                        课程广告
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
